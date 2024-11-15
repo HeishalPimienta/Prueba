@@ -1,0 +1,24 @@
+
+<div class="menu">
+  <div class="sidenav" [class.expanded]="isExpanded">
+    <button class="toggle-btn" (click)="toggleMenu()">
+      <img id="logo" src="assets/img/flechita.png">
+    </button>
+    <ul>
+      <li routerLink="/inicio" routerLinkActive="active-link">
+        <img id="logo" src="assets/img/home.png">
+        <span class="menu-text" [class.hide-text]="!isExpanded">Inicio</span>
+      </li>
+      <li routerLink="/agenda" routerLinkActive="active-link">
+        <img id="logo" src="assets/img/agenda.png">
+        <span class="menu-text" [class.hide-text]="!isExpanded">Agenda</span>
+      </li>
+      <li routerLink="/calendario" routerLinkActive="active-link">
+        <img id="logo" src="assets/img/importancia.png">
+        <span class="menu-text" [class.hide-text]="!isExpanded">Calendario</span>
+      </li>
+      
+    
+    </ul>
+  </div>
+</div>

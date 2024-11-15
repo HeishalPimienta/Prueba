@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="contenedor">
+    <app-menu></app-menu>
+    <div class="contenedor-lista">
+        <div class="encabezado">
+            <button (click)="setFilter('all')">Todo</button>
+            <button (click)="setFilter('completed')">Completado</button>
+            <button (click)="setFilter('pending')">Pendientes</button>
+        </div>
+        <div class="lista-menu">
+            <!-- Muestra el título según el filtro actual -->
+            <p>{{ filterTitle }}</p>
+            <ul class="grupo-lista">
+                <li *ngFor="let item of filteredItems" class="items-lista">
+                    <input type="checkbox" [id]="'chk-item-' + item.id" [checked]="item.state" (change)="toggleState(item)">
+                    <label [for]="'chk-item-' + item.id"> {{ item.name }}</label>
+                    <button (click)="deleteItem(item.id)">X</button>
+                </li>
+            </ul>
+        </div>
+        <div class="tareas">
+            <button (click)="mostrarSeleccionTipo()">Agenda tu tarea/evento</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+

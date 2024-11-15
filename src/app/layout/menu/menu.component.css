@@ -1,0 +1,77 @@
+/* Estilo general del menú */
+.sidenav {
+  border-radius: 10px;
+  border: solid black;
+  height: 300px;
+  width: 60px; /* Ancho cuando está colapsado */
+  background-color: #04ADBF;
+  transition: width 0.5s; /* Transición suave para cambiar de tamaño */
+  padding-top: 20px;
+  white-space: nowrap; /* Para evitar que los textos se desborden */
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 35px;
+}
+
+.sidenav.expanded {
+  width: 250px; /* Ancho cuando está expandido */
+}
+
+#logo {
+  width: 30px;
+}
+
+li{
+  margin-top: 20px;
+}
+
+/* Botón de despliegue */
+.toggle-btn {
+  background-color: #04ADBF;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.toggle-btn:hover {
+  background-color: #575757;
+}
+
+/* Opciones del menú */
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav ul li {
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav ul li i {
+  font-size: 24px;
+  min-width: 30px; /* Para que el ícono tenga una anchura constante */
+}
+
+/* Transición del texto */
+.menu-text {
+  margin-left: 10px;
+  font-size: 18px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+/* El texto desaparece cuando el menú está colapsado */
+.hide-text {
+  display: none;
+}
+
+/* Efecto hover en las opciones */
+.sidenav ul li:hover {
+  background-color: #575757;
+  cursor: pointer;
+}

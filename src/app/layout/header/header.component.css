@@ -1,0 +1,29 @@
+.header{
+    background-color: #F0AF2B;
+    display: flex;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+#titulo{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    width: 50%;
+    font-size: 70px;
+    align-content: center;
+    background: linear-gradient(50deg, #D94848, #F0AF2B, #04ADBF); /* Degradado de colores */
+    -webkit-background-clip: text; /* Recorta el fondo en el área del texto */
+    color: transparent; /* Hace el texto transparente para mostrar el degradado */
+    -webkit-text-stroke: 1.5px black; /* Borde negro alrededor del texto */
+}
+
+
+#logo{
+
+    width: 17%;
+    margin: 30px;
+    padding-left: 1px;
+   
+}
+

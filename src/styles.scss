@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.topbar {
+    width: 100%;
+  }
+  .app-header{
+    width: 100%;
+  }
+  .bg-body-secondary {
+    color: white;
+    --bs-bg-opacity: 1;
+    background-color: rgb(19 4 104) !important;
+  }
+  
+  .app-sidebar .bg-body-secondary .shadow{
+    color: #ffffff !important;
+}

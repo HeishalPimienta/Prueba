@@ -1,0 +1,24 @@
+.container{
+    background-color: #04ADBF;
+    font-family: cursive;
+    display: flex;
+    border-radius: 10px;
+    width: 150%;
+    height: 90px;
+    align-items: center;
+    align-content: center;
+    
+}
+
+h3{
+    text-align: center;
+    font-size: 140%;
+}
+
+#heishal{
+    width: 50%;
+}
+#hana{
+    width: 50%;
+}
+

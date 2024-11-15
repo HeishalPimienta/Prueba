@@ -1,0 +1,22 @@
+<!-- login.component.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.component.css">
+    <title>Página Básica</title>
+</head>
+<body>
+    <div class="login">
+        <img id="logo" src="assets/img/logo-universidad-de-la-guajira.png">
+        <h1>Iniciar Sesión</h1>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <input formControlName="username" type="text" placeholder="Correo" required />
+            <input formControlName="password" type="password" placeholder="Contraseña" required />
+            <button type="submit" class="btn">Entrar</button>
+            <button type="button" (click)="mostrarMensaje()">Guía para iniciar sesión</button>
+          </form>
+    </div>
+</body>
+</html>
